@@ -40,6 +40,9 @@
     --state-active-link: #d6cee1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: var(--main-font);
     font-weight: 400;

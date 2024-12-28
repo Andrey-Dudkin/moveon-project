@@ -1,6 +1,5 @@
 .header{
     width: 100%;
-    // min-height: 100vh;
     min-height: 1075.64px;
     background: url("../img/images/header-bg.svg") no-repeat center / cover;
     margin-bottom: 60px;
@@ -49,9 +48,6 @@
         }
         &:hover{
             color: var(--state-hover-link);
-        }
-        &:active{
-            color: var(--state-active-link);
         }
     }
 }

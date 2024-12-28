@@ -33,12 +33,16 @@
 .our-contact__links{
     display: flex;
     flex-direction: column;
-    .our-contact__email-one,
-    .our-contact__email-two,
-    .our-contact__phone{
+    .our-contact__link{
         font-size: clamp(14px,2vw,18px);
         line-height: 160%;
         color: var(--main-color);
+        &:focus{
+            background-color: var(--state-focus-link);
+        }
+        &:hover{
+            color: var(--state-hover-link);
+        }
     }
 }
 .copywriting{

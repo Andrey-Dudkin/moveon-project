@@ -58,9 +58,6 @@
 .menu__list .menu__link:hover {
   color: var(--state-hover-link);
 }
-.menu__list .menu__link:active {
-  color: var(--state-active-link);
-}
 
 .header-content {
   display: flex;
@@ -264,12 +261,16 @@
   display: flex;
   flex-direction: column;
 }
-.our-contact__links .our-contact__email-one,
-.our-contact__links .our-contact__email-two,
-.our-contact__links .our-contact__phone {
+.our-contact__links .our-contact__link {
   font-size: clamp(14px, 2vw, 18px);
   line-height: 160%;
   color: var(--main-color);
+}
+.our-contact__links .our-contact__link:focus {
+  background-color: var(--state-focus-link);
+}
+.our-contact__links .our-contact__link:hover {
+  color: var(--state-hover-link);
 }
 
 .copywriting {
@@ -320,6 +321,10 @@
   --state-focus-link: rgba(214, 206, 225,0.3);
   --state-hover-link: #d6cee1;
   --state-active-link: #d6cee1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
